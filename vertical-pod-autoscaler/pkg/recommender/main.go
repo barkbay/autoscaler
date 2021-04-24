@@ -20,6 +20,8 @@ import (
 	"flag"
 	"time"
 
+	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
+
 	apiv1 "k8s.io/api/core/v1"
 	"k8s.io/autoscaler/vertical-pod-autoscaler/common"
 	"k8s.io/autoscaler/vertical-pod-autoscaler/pkg/recommender/input/history"
